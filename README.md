@@ -25,7 +25,12 @@ The goal of this project is to create a personalized experience for each buyer, 
 
 ## How to execute
 
-1 - Create the virtual environment
+1 - Clone this repository
+```bash
+https://github.com/emoreno-hub/Personalized_Real_Estaet_Agent.git
+```
+
+2 - Create the virtual environment
 
 ```bash
 conda create --name agent --python==3.9.18
@@ -33,7 +38,7 @@ conda create --name agent --python==3.9.18
 
 This step uses [Anaconda](https://www.anaconda.com/) as the environment manager, but feel free to use another one of your choice.
 
-2 - Install the requirements
+3 - Install the requirements
 
 ```bash
 pip install -r requirements.txt
