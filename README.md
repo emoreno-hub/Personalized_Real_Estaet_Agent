@@ -2,17 +2,23 @@
 
 The goal of this project is to create a personalized experience for each buyer, making the property search process more engaging and tailored to individual preferences. This application leverages large language models (LLMs) and vector databases to transform standard real estate listings into personalized narratives that resonate with potential buyers' unique preferences and needs.
 
+## Methodology
+To achieve this, the project utilizes LangChain and ChromaDB:
+- **LangChain:** LangChain provides a structured framework to interact with Large Language Models (LLMs). It simplifies prompt engineering, response parsing, and integration with external data sources, making it easier to generate high-quality real estate listings dynamically.
+
+- **ChromaDB:** ChromaDB serves as a vector database to store and retrieve property listings based on semantic similarity. By converting property descriptions into vector embeddings, the system can quickly find and recommend relevant listings based on user queries, improving search accuracy beyond simple keyword matching.
+
 ## Core Components of "HomeMatch"
 
 ### Understanding Buyer Preferences
 
 - Buyers will input their requirements and preferences, such as location, property type, budget, amenities, and lifestyle choices.
-- The application uses LLMs to interpret these inputs in natural language, understanding nuanced requests beyond basic filters.
+- The application uses **LLMs (powered by LangChain)** to interpret these inputs in natural language, understanding nuanced requests beyond basic filters.
 
 ### Integrating with a Vector Database
 
-- Connect "HomeMatch" with a vector database, where all available property listings are stored.
-- Utilize vector embeddings to match properties with buyer preferences, focusing on aspects like neighborhood vibes, architectural styles, and proximity to specific amenities.
+- "HomeMatch" connects with **ChromaDB**, a vector databases where all available property listings are stored.
+- The system generates and stores vector embeddings for each listing, enabling semantic search that considers deeper aspects like neighborhood vibes, architectural styles, and proximity to specific amenities..
 
 ### Personalized Listing Description Generation
 
