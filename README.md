@@ -22,8 +22,21 @@ To achieve this, the project utilizes LangChain and ChromaDB:
 
 ### Personalized Listing Description Generation
 
-- For each matched listing, use an LLM to rewrite the description in a way that highlights aspects most relevant to the buyer’s preferences.
-- Ensure personalization emphasizes characteristics appealing to the buyer without altering factual information about the property.
+- Each generated real estate listing follows a structured listing template, ensuring consistency in details such as price, bedrooms, and neighborhood descriptions. The listing template is as follows:
+```bash
+Neighborhood: [Neighborhood Name]
+Price: [$Amount]
+Bedrooms: [Number]
+Bathrooms: [Number]
+House Size: [Square Footage]
+
+Description: [A unique and engaging property description, highlighting features like design, amenities, and lifestyle benefits.]
+
+Neighborhood Description: [A brief summary of the surrounding neighborhood, including community highlights, nearby attractions, and lifestyle perks.]
+```
+
+- Once a buyer's preferences are identified, the LLM dynamically rewrites property descriptions to emphasize features most relevant to them (e.g., highlighting proximity to schools for families or showcasing smart home technology for tech-savvy buyers).
+- The personalized descriptions maintain factual accuracy while enhancing engagement by tailoring the narrative to the buyer’s interests.
 
 ### Listing Presentation
 
