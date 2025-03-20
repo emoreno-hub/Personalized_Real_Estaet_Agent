@@ -8,7 +8,7 @@ To achieve this, the project utilizes LangChain and ChromaDB:
 
 - **ChromaDB:** ChromaDB serves as a vector database to store and retrieve property listings based on semantic similarity. By converting property descriptions into vector embeddings, the system can quickly find and recommend relevant listings based on user queries, improving search accuracy beyond simple keyword matching.
 
-## Core Components of "HomeMatch"
+## Core Components of HomeMatch Application
 
 ### Understanding Buyer Preferences
 
