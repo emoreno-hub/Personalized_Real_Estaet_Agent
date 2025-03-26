@@ -1,6 +1,6 @@
 # RealtorGPT
-#### Personalized AI real estate assistant, powered by LangChain, RAG, and ChromaDB
-The goal of this project is to create a personalized experience for each buyer, making the property search process more engaging and tailored to individual preferences. This application leverages large language models (LLMs) and vector databases to transform standard real estate listings into personalized narratives that resonate with potential buyers' unique preferences and needs.
+#### Smarter home search through AI-driven personalization
+I built this project to explore how AI can make the property search experience more personalized and meaningful for buyers. By combining large language models (LLMs) with vector databases, the app transforms standard real estate listings into tailored narratives that align with each buyer’s unique preferences and lifestyle. The goal is to move beyond basic filters and create a smarter, more engaging home search powered by semantic understanding.
 
 ## Methodology
 To achieve this, the project utilizes LangChain and ChromaDB:
@@ -8,7 +8,7 @@ To achieve this, the project utilizes LangChain and ChromaDB:
 
 - **ChromaDB:** ChromaDB serves as a vector database to store and retrieve property listings based on semantic similarity. By converting property descriptions into vector embeddings, the system can quickly find and recommend relevant listings based on user queries, improving search accuracy beyond simple keyword matching.
 
-## Core Components of HomeMatch Application
+## Core Components of the Realtor GPT Application
 
 ### Understanding Buyer Preferences
 
@@ -17,7 +17,7 @@ To achieve this, the project utilizes LangChain and ChromaDB:
 
 ### Integrating with a Vector Database
 
-- "HomeMatch" connects with **ChromaDB**, a vector databases where all available property listings are stored.
+- Realtor GPT connects with **ChromaDB**, a vector databases where all available property listings are stored.
 - The system generates and stores vector embeddings for each listing, enabling semantic search that considers deeper aspects like neighborhood vibes, architectural styles, and proximity to specific amenities..
 
 ### Personalized Listing Description Generation
@@ -46,7 +46,7 @@ Neighborhood Description: [A brief summary of the surrounding neighborhood, incl
 
 1 - Clone this repository
 ```bash
-https://github.com/emoreno-hub/Personalized_Real_Estaet_Agent.git
+https://github.com/emoreno-hub/Realtor_GPT.git
 ```
 
 2 - Create the virtual environment
@@ -71,3 +71,7 @@ pip install -r requirements.txt
 OPENAI_API_KEY = 'YOUR API KEY'
 ```
 It is highly recommended to use GPU to execute the code.
+
+## Author
+**Eric Moreno**
+
